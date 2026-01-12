@@ -1,0 +1,36 @@
+/*Media Queries*/
+
+/*Pantallas pequeñas*/
+@media screen and(min-width:576px) {
+    
+    body{max-width: 540px;}
+    
+}
+
+
+/*Pantallas medianas*/
+@media screen and(min-width:768px){
+    
+    body{max-width: 720px;}
+}
+
+/*Pantallas grandes*/
+@media screen and(max-width:992px) {
+    
+    body{max-width: 960px;}
+    
+}
+
+.modal {
+    position: fixed; 
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Fondo semitransparente */
+}
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+}
+input { width: 100%; margin-bottom: 10px; display: block; }

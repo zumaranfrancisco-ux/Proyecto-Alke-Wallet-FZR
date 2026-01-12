@@ -1,0 +1,30 @@
+li{
+    border: 1px solid rgb(196, 193, 193);
+    margin-bottom: 5p;
+    padding: 10px;
+    list-style: none;
+}
+h2{text-align: center;}
+
+/*Media Queries*/
+
+/*Pantallas pequeñas*/
+@media screen and(min-width:576px) {
+    
+    body{max-width: 540px;}
+    
+}
+
+
+/*Pantallas medianas*/
+@media screen and(min-width:768px){
+    
+    body{max-width: 720px;}
+}
+
+/*Pantallas grandes*/
+@media screen and(max-width:992px) {
+    
+    body{max-width: 960px;}
+    
+}
