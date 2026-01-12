@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta
+      name="author"
+      content="Francisco Zumaran Rojas"
+      <meta
+      charset="UTF-8"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú</title>
+
+    <!-- Bootstrap 4 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <!---Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <!---MI CSS-->
+    <link rel="stylesheet" href="./assets/css/menustyle.css"
+  </head>
+  <body>
+    <section>
+      <article>
+        <h2>Menú Principal</h2>
+        <p>Saldo Disponible:</p>
+        <h2 type="number" id="Montodepositado">$0</h2>
+      </article>
+    </section>
+
+    <!--- Aqui van los botones-->
+    <section>
+      <article>
+        <div>
+          <a
+            class="btn btn-success"
+            href="deposit.html"
+            role="button"
+            id="depositar"
+            >Depositar</a
+          >
+
+          <a
+            class="btn btn-success"
+            href="sendmoney.html"
+            role="button"
+            id="enviardinero"
+            >Enviar Dinero</a
+          >
+        </div>
+
+        <div>
+          <a
+            class="btn btn-success"
+            href="transactions.html"
+            role="button"
+            id="transacciones"
+            >Últimos Movimientos</a
+          >
+        </div>
+      </article>
+    </section>
+
+    <!----JQR-->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!------Vinculacion BOOTSTRAP 4-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!----Vinculacion JS-->
+    <script src="./assets/js/menujs.js"></script>
+  </body>
+</html>
