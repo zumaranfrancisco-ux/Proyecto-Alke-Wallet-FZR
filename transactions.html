@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta
+      name="author"
+      content="Francisco Zumaran Rojas"
+      <meta
+      charset="UTF-8"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transacciones</title>
+    <!-- Bootstrap 4 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+
+    <!---Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <!---MI CSS-->
+    <link rel="stylesheet" href="./assets/css/transactionstyle.css"
+  </head>
+  <body>
+    <section class="container mt-5">
+      <article class="card p-4 mx-auto" style="max-width: 600px">
+        <h2>Últimos Movimientos</h2>
+
+        <!-- Filtro de Movimientos -->
+        <div class="form-group mt-3">
+          <label for="filtroTipo">Filtrar por tipo:</label>
+          <select id="filtroTipo" class="form-control">
+            <option value="todos">Todos los movimientos</option>
+            <option value="compra">Compra en línea</option>
+            <option value="deposito">Depósito</option>
+            <option value="transferencia">Envíos de dinero</option>
+          </select>
+        </div>
+
+        <!-- Lista dinámica -->
+        <ul id="listaMovimientos" class="list-group list-group-flush mt-3">
+          <!-- Los movimientos se cargarán aquí con JS -->
+        </ul>
+
+        <div class="mt-4">
+          <a class="btn btn-secondary" id="menu" href="menu.html" role="button"
+            >Volver al Menú Principal</a
+          >
+        </div>
+      </article>
+    </section>
+    <!---Scripts-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/transactionsjs.js"></script>
+  </body>
+</html>
